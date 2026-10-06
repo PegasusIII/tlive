@@ -132,6 +132,10 @@ FUTURE ACCENTIS CONNECTION
 DEVELOPMENT
 - app.js contains the navigation, views and business calculations.
 - styles.css owns the visual design. logo.png is the fixed brand asset.
+  Its final "v0.9 visual polish" section is appearance only and can be
+  deleted to return to the previous look. The HTA engine ignores flex gap,
+  so spacing there uses margins. Type and charts step up from 1680px and
+  2200px wide windows for large screens and TVs.
 - connector.js loads the source. data.js is a generated report snapshot.
 - To regenerate the snapshot from the supplied exports, run the
   accompanying build_snapshot.py from its parent folder with the exports in
