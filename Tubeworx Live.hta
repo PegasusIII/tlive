@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tubeworx Live</title>
+  <hta:application id="TubeworxLive" applicationname="Tubeworx Live" border="thin" caption="yes" maximizebutton="yes" minimizebutton="yes" scroll="yes" singleinstance="yes" sysmenu="yes" windowstate="maximize" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="data.js" type="text/javascript"></script>
+  <script src="connector.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+</head>
+<body onload="TW.start()">
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><img src="logo.png" alt="Tubeworx" /></div>
+      <div class="brand-line"><span>Tubeworx Live</span><i class="live-dot" title="Application running"></i></div>
+      <div class="nav-heading">WORKSPACE</div>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot">Local app <span id="app-version">v0.8</span><br />Data source: report snapshot</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><h1 id="page-title">CEO Dashboard</h1><div id="page-subtitle" class="subtitle"></div></div>
+        <div class="top-actions"><span class="snapshot-badge">REPORT SNAPSHOT · NOT LIVE</span><span id="current-date"></span></div>
+      </header>
+      <div id="page" class="page"></div>
+      <footer>Prototype using supplied report exports. Values and dates may be out of date. No Accentis API connection or write-back is active.</footer>
+    </main>
+  </div>
+</body>
+</html>
